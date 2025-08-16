@@ -41,19 +41,16 @@
     <button id="changeBackgroundBtn">Change Background</button>
 
     <script>
-    // Array of background images
     const backgrounds = [
         'https://images8.alphacoders.com/723/thumb-1920-723290.jpg',
         'https://images5.alphacoders.com/109/thumb-1920-1092839.jpg'
         
     ];
 
-    // Function to change the background image
     document.getElementById('changeBackgroundBtn').addEventListener('click', function() {
         // Generate a random index
         const randomIndex = Math.floor(Math.random() * backgrounds.length);
         
-        // Change the background image to the selected one
         document.body.style.backgroundImage = `url(${backgrounds[randomIndex]})`;
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundPosition = 'center';
@@ -63,3 +60,4 @@
 
 </body>
 </html>
+
